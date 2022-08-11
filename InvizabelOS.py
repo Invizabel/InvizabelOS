@@ -1,7 +1,7 @@
 import os
 
 os.system("clear")
-os.system("sudo dnf upate -y")
+os.system("sudo dnf update -y")
 os.system("sudo dnf autoremove -y")
 os.system("sudo dnf install clamav clamtk -y")
 os.system("sudo dnf install fail2ban -y")
