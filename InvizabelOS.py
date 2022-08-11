@@ -2,8 +2,6 @@ import os
 
 #install everything
 os.system("clear")
-os.system("sudo dnf update -y")
-os.system("sudo dnf autoremove -y")
 os.system("sudo dnf install clamav clamtk -y")
 os.system("sudo dnf install fail2ban -y")
 os.system("sudo dnf install htop -y")
@@ -16,7 +14,7 @@ os.system("sudo dnf install dnf-plugins-core")
 os.system("sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/")
 os.system("sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc")
 os.system("sudo dnf install brave-browser -y")
-os.system("sudo dnf install python3-pip")
+os.system("sudo dnf install python3-pip -y")
 os.system("pip install requests")
 os.system("pip install urllib3")
 os.system("pip install selenium")
