@@ -2,6 +2,12 @@ import os
 
 #install everything
 os.system("clear")
+os.system("sudo dnf update -y")
+os.system("sudo dnf autoremove -y")
+os.system("flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y")
+os.system("sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y")
+os.system("https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y")
+os.system("sudo dnf install akmod-nvidia -y")
 os.system("sudo dnf install clamav clamtk -y")
 os.system("sudo dnf install fail2ban -y")
 os.system("sudo dnf install htop -y")
