@@ -8,7 +8,6 @@ os.system("sudo flatpak remote-add --if-not-exists flathub https://flathub.org/r
 os.system("sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y")
 os.system("sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y")
 os.system("sudo dnf install akmod-nvidia -y")
-os.system("sudo dnf install chrome-gnome-shell -y")
 os.system("sudo dnf install gnome-tweaks -y")
 os.system("sudo dnf install clamav clamtk -y")
 os.system("sudo dnf install fail2ban -y")
@@ -25,7 +24,7 @@ os.system("sudo dnf install chromium -y")
 os.system("sudo dnf install gnome-shell-extension-caffeine.noarch -y")
 os.system("sudo dnf install gnome-shell-extension-dash-to-dock.noarch -y")
 os.system("sudo dnf install python3-pip -y")
-os.system("pip install TheSilentPyPi")
+os.system("pip install TheSilent")
 os.system("pip install VolorSavanna")
 
 #change to Pixel Theme
