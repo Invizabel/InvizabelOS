@@ -9,7 +9,7 @@ os.system("sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusio
 os.system("sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y")
 os.system("sudo dnf install akmod-nvidia -y")
 os.system("sudo dnf install gnome-tweaks -y")
-os.system("sudo dnf install clamav clamtk -y")
+os.system("sudo dnf install clamav -y")
 os.system("sudo dnf install fail2ban -y")
 os.system("sudo dnf install ufw -y")
 os.system("sudo ufw default deny incoming")
