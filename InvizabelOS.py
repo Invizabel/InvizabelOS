@@ -9,6 +9,7 @@ os.system("sudo flatpak remote-add --if-not-exists flathub https://flathub.org/r
 os.system("sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y")
 os.system("sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y")
 os.system("sudo dnf install akmod-nvidia -y")
+os.system("sudo dnf install nano -y")
 os.system("sudo dnf install gnome-tweaks -y")
 os.system("sudo dnf install clamav -y")
 os.system("sudo dnf install fail2ban -y")
