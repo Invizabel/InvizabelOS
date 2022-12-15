@@ -29,6 +29,7 @@ os.system("sudo dnf install gnome-shell-extension-caffeine.noarch -y")
 os.system("sudo dnf install gnome-shell-extension-dash-to-dock.noarch -y")
 os.system("sudo dnf install python3-pip -y")
 os.system("pip install TheSilent")
+os.system("sudo pip install TheSilent")
 os.system("pip install VolorSavanna")
 
 #change to Pixel Theme
