@@ -12,7 +12,6 @@ os.system("sudo dnf install akmod-nvidia -y")
 os.system("sudo dnf install nano -y")
 os.system("sudo dnf install gnome-tweaks -y")
 os.system("sudo dnf install clamav -y")
-os.system("sudo freshclam -y")
 os.system("sudo dnf install fail2ban -y")
 os.system("sudo dnf install nmap -y")
 os.system("sudo dnf install VirtualBox -y")
@@ -38,8 +37,13 @@ os.system("unzip Pixel/Pixel.zip")
 os.system("sudo cp -r Pixel /usr/share/icons")
 os.system("cd -")
 os.system("sudo rm -r Pixel")
+
 os.system('gsettings set org.gnome.desktop.interface icon-theme "Pixel"')
+
+#scan for viruses
+os.system("sudo freshclam")
 os.system("sudo clamscan -r --recursive --remove /")
+
 os.system("sudo systemctl enable gdm.service")
 os.system("sudo systemctl set-default graphical.target")
 os.system("sudo systemctl restart gdm.service")
