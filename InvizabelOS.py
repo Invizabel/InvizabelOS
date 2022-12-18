@@ -29,6 +29,7 @@ os.system("sudo dnf install python3-pip -y")
 os.system("pip install TheSilent")
 os.system("sudo pip install TheSilent")
 os.system("pip install VolorSavanna")
+os.system("pip install sqlmap")
 
 #change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
