@@ -1,6 +1,6 @@
 import os
 
-#install everything
+# install everything
 os.system("clear")
 os.system("sudo dnf update -y")
 os.system("sudo dnf autoremove -y")
@@ -31,17 +31,22 @@ os.system("sudo pip install TheSilent")
 os.system("pip install VolorSavanna")
 os.system("pip install sqlmap")
 
-#change to Pixel Theme
+# install brave
+os.system("sudo dnf install dnf-plugins-core -y")
+os.system("sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo")
+os.system("sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc")
+os.system("sudo dnf install brave-browser -y")
+
+# change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
 os.system("unzip Pixel/Pixel.zip")
 os.system("sudo cp -r Pixel /usr/share/icons")
 os.system("cd -")
 os.system("sudo rm -r Pixel")
-
 os.system('gsettings set org.gnome.desktop.interface icon-theme "Pixel"')
 
-#scan for viruses
-os.system("sudo freshclam")
-os.system("sudo clamscan -r --recursive --remove /")
+# destroy old data
+os.system("fstrim --all")
 
+# reboot
 os.system("reboot")
