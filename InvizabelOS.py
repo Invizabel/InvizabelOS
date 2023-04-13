@@ -41,6 +41,10 @@ os.system("sudo dnf install brave-browser -y")
 os.system("sudo dnf install kernel-headers kernel-devel dkms  -y")
 os.system("sudo dnf groupinstall development-tools -y")
 
+# install wine dependencies for some games
+os.system("sudo dnf install winetricks -y")
+os.system("winetricks videomemorysize=2048")
+
 # change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
 os.system("unzip Pixel/Pixel.zip")
