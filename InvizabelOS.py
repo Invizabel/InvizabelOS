@@ -37,6 +37,10 @@ os.system("sudo dnf config-manager --add-repo https://brave-browser-rpm-release.
 os.system("sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc")
 os.system("sudo dnf install brave-browser -y")
 
+# install virtualbox dependencies
+os.system("sudo dnf install kernel-headers kernel-devel dkms  -y")
+os.system("sudo dnf groupinstall development-tools -y")
+
 # change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
 os.system("unzip Pixel/Pixel.zip")
