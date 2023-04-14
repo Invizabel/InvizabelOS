@@ -19,17 +19,20 @@ os.system("sudo dnf install wireshark -y")
 os.system("sudo dnf install foremost -y")
 os.system("sudo dnf install htop -y")
 os.system("sudo dnf install neofetch -y")
-os.system("sudo dnf install wine -y")
 os.system("sudo dnf install steam -y")
 os.system("sudo dnf install idle -y")
 os.system("sudo dnf install chromium -y")
 os.system("sudo dnf install gnome-shell-extension-caffeine.noarch -y")
 os.system("sudo dnf install gnome-shell-extension-dash-to-dock.noarch -y")
+
+# install python modules
 os.system("sudo dnf install python3-pip -y")
 os.system("pip install TheSilent")
 os.system("sudo pip install TheSilent")
 os.system("pip install VolorSavanna")
 os.system("pip install sqlmap")
+os.system("pip install autopep8")
+os.system("pip install pylint")
 
 # install brave
 os.system("sudo dnf install dnf-plugins-core -y")
