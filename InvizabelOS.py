@@ -27,12 +27,14 @@ os.system("sudo dnf install gnome-shell-extension-dash-to-dock.noarch -y")
 
 # install python modules
 os.system("sudo dnf install python3-pip -y")
-os.system("pip install TheSilent")
-os.system("sudo pip install TheSilent")
-os.system("pip install VolorSavanna")
-os.system("pip install sqlmap")
-os.system("pip install autopep8")
-os.system("pip install pylint")
+os.system("pip3 install TheSilent")
+os.system("sudo pip3 install TheSilent")
+os.system("pip3 install VolorSavanna")
+os.system("pip3 install sqlmap")
+os.system("pip3 install autopep8")
+os.system("pip3 install pylint")
+os.system("pip3 install build")
+os.system("pip3 install twine")
 
 # install brave
 os.system("sudo dnf install dnf-plugins-core -y")
