@@ -50,7 +50,7 @@ os.system("sudo dnf groupinstall development-tools -y")
 
 # install wine dependencies for some games
 os.system("sudo dnf install winetricks -y")
-os.system("winetricks videomemorysize=4196")
+os.system("winetricks videomemorysize=2048")
 
 # change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
