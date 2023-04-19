@@ -21,6 +21,7 @@ os.system("sudo dnf install foremost -y")
 os.system("sudo dnf install htop -y")
 os.system("sudo dnf install neofetch -y")
 os.system("sudo dnf install steam -y")
+os.system("sudo dnf install wine -y")
 os.system("sudo dnf install idle -y")
 os.system("sudo dnf install chromium -y")
 os.system("sudo dnf install gnome-shell-extension-caffeine.noarch -y")
@@ -49,7 +50,7 @@ os.system("sudo dnf groupinstall development-tools -y")
 
 # install wine dependencies for some games
 os.system("sudo dnf install winetricks -y")
-os.system("winetricks videomemorysize=2048")
+os.system("winetricks videomemorysize=4196")
 
 # change to Pixel Theme
 os.system("git clone https://github.com/Invizabel/Pixel")
