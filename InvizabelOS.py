@@ -14,7 +14,6 @@ os.system("sudo dnf install clamav clamtk -y")
 os.system("sudo dnf install fail2ban -y")
 os.system("sudo dnf install nmap -y")
 os.system("sudo dnf install nikto -y")
-os.system("sudo dnf install VirtualBox -y")
 os.system("sudo dnf install bleachbit -y")
 os.system("sudo dnf install wireshark -y")
 os.system("sudo dnf install foremost -y")
@@ -38,16 +37,6 @@ os.system("pip3 install autopep8")
 os.system("pip3 install pylint")
 os.system("pip3 install build")
 os.system("pip3 install twine")
-
-# install brave
-os.system("sudo dnf install dnf-plugins-core -y")
-os.system("sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo")
-os.system("sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc")
-os.system("sudo dnf install brave-browser -y")
-
-# install virtualbox dependencies
-os.system("sudo dnf install kernel-headers kernel-devel dkms  -y")
-os.system("sudo dnf groupinstall development-tools -y")
 
 # install wine dependencies for some games
 os.system("sudo dnf install winetricks -y")
