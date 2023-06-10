@@ -37,10 +37,6 @@ os.system("pip3 install pylint")
 os.system("pip3 install build")
 os.system("pip3 install twine")
 
-# install wine dependencies for some games
-os.system("sudo dnf install winetricks -y")
-os.system("winetricks videomemorysize=2048")
-
 # start and enable tor on start up
 os.system("sudo systemctl start tor")
 os.system("sudo systemctl enable tor")
